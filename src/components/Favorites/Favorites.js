@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch,useSelector } from 'react-redux'
 import { setJokesList } from '../../redux/store/jokeSlice/jokeSlice'
+import {removeLs} from "../../assets/localStorageCart"
 import './Favorites.css'
 
 const Favorites = () => {
@@ -10,7 +11,7 @@ const Favorites = () => {
   
   const clearList = () => {
     dispatch(setJokesList([]))
-    localStorage.removeItem('array');
+    removeLs()
   }
 
   const deleteItem = (id) => {

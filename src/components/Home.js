@@ -4,7 +4,7 @@ import { useEffect, } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setJokesList, fetchJoke } from "../redux/store/jokeSlice/jokeSlice";
 import { useInterval } from "../assets/StartStop";
-import {loadLS,setLS,removeLs} from "../assets/localStorageCart"
+import {loadLS, setLS,removeLs} from "../assets/localStorageCart"
 
 
 const Home = () => {
